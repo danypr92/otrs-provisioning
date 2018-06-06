@@ -1,0 +1,8 @@
+# Vars to use in lxc-create
+NAME="otrs5"
+DISTRIBUTION="ubuntu"
+RELEASE="xenial"
+ARCH="amd64"
+HOST="local.$NAME.coop"
+DEVENV_USER="otrs"
+DEVENV_GROUP="otrs"

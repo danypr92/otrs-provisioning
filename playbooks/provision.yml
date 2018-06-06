@@ -1,0 +1,7 @@
+---
+- name: provision
+  hosts: otrs_servers
+  become: yes
+  roles:
+    - role: toffi9.otrs
+      otrs_db: "postgres"

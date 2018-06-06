@@ -1,0 +1,11 @@
+---
+# In development environment a user with same name as your system user will be created
+development_user: "{{ lookup('env', 'USER') }}"
+
+system_administrators:
+  - name: otrs
+    ssh_key: "~/.ssh/id_rsa.pub"
+    state: present
+  - name: "{{ development_user }}"
+    ssh_key: "~/.ssh/id_rsa.pub"
+    state: present

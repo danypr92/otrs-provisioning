@@ -1,0 +1,5 @@
+[dev]
+local.otrs.coop
+
+[otrs_servers:children]
+dev
